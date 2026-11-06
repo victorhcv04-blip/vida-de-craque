@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AB GAMES | VIDA DE CRAQUE</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #050a12;
+  color: white;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.campo {
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,10,25,.3)),
+    linear-gradient(0deg, #030711, transparent 70%),
+    url("https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=1800");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+header {
+  padding: 30px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #168cff;
+}
+
+.logo small {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 6px;
+  margin-top: 4px;
+}
+
+.versao {
+  color: #8cabc9;
+  font-size: 12px;
+}
+
+main {
+  min-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10%;
+}
+
+.subtitulo {
+  color: #168cff;
+  letter-spacing: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: clamp(45px, 8vw, 95px);
+  line-height: .95;
+  margin: 20px 0;
+  font-weight: 900;
+}
+
+h1 span {
+  color: #168cff;
+}
+
+.descricao {
+  color: #c4d0df;
+  max-width: 430px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  max-width: 300px;
+}
+
+button {
+  padding: 17px;
+  border: 1px solid #168cff;
+  background: rgba(0,15,35,.8);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  background: #168cff;
+  transform: translateX(5px);
+}
+
+.principal {
+  background: #087cf0;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 6%;
+  color: #71849c;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+@media(max-width:600px) {
+  header { padding: 22px 6%; }
+  main { padding: 20px 7%; }
+  .versao { font-size: 9px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="campo"></div>
+
+<header>
+  <div class="logo">
+    <span>AB</span> GAMES
+    <small>BRASIL</small>
+  </div>
+  <div class="versao">PROJETO 001 | 2026</div>
+</header>
+
+<main>
+  <div class="subtitulo">SUA HISTÓRIA COMEÇA AQUI</div>
+
+  <h1>VIDA DE<br><span>CRAQUE</span></h1>
+
+  <p class="descricao">
+    Comece do zero, conquiste seu espaço,
+    defenda grandes clubes e escreva seu nome
+    na história do futebol.
+  </p>
+
+  <div class="botoes">
+    <button class="principal" onclick="novaCarreira()">
+      NOVA CARREIRA
+    </button>
+
+    <button onclick="continuar()">
+      CONTINUAR
+    </button>
+
+    <button onclick="configuracoes()">
+      CONFIGURAÇÕES
+    </button>
+  </div>
+</main>
+
+<footer>
+  AB GAMES © 2026 — TODOS OS DIREITOS RESERVADOS
+</footer>
+
+<script>
+function novaCarreira() {
+  alert("Sua jornada está prestes a começar!");
+}
+
+function continuar() {
+  alert("Nenhuma carreira salva ainda.");
+}
+
+function configuracoes() {
+  alert("Configurações em desenvolvimento.");
+}
+</script>
+
+</body>
+</html>
